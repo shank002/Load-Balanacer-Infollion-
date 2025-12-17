@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Balancer Simulation</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div id="container">
+        <h1>Load Balancer Dashboard</h1>
+        
+        <div id="simulation-controls">
+            <button onclick="startSimulation()">Start Simulation</button>
+            <button onclick="stopSimulation()">Stop Simulation</button>
+            <p id="status-text">Idle</p>
+
+            <label for="loadBalancerMode">Load Balancer Mode: </label>
+            <select id="loadBalancerMode" onchange="toggleLoadBalancerMode()">
+                <option value="roundRobin">Round Robin</option>
+                <option value="threshold">Threshold-based</option>
+                <option value="leastOccupied">Least Occupied</option>
+            </select>
+        </div>
+
+        <!-- Logs and Node Metrics Section -->
+        <div id="log-and-metrics">
+            <!-- Log Section -->
+            <div id="log-container">
+                <h3>Request Log</h3>
+                <textarea id="log" rows="10" cols="30" readonly></textarea>
+            </div>
+
+            <!-- Node Metrics Section -->
+            <div id="metrics-container">
+                <h3>Node Metrics</h3>
+                <div id="node1-load">
+                    Node1: <div class="node-progress"><span id="node1-progress"></span></div>
+                </div>
+                <div id="node2-load">
+                    Node2: <div class="node-progress"><span id="node2-progress"></span></div>
+                </div>
+                <div id="node3-load">
+                    Node3: <div class="node-progress"><span id="node3-progress"></span></div>
+                </div>
+                <div id="ipDisplay">Generated IP: </div>
+                <div id="nodeDisplay">Linked Node: </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
+
