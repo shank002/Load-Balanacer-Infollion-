@@ -1,5 +1,5 @@
 HOW TO RUN THIS SOLUTION: (TASK3 - Write a solution for Load-Balancer)
-..Git-Clone this repository / Download this repo. as zip
+Git-Clone this repository / Download this repo. as zip
 
 1. Exceute the virtual-environment
    -> $ python3 -m venv virtual
