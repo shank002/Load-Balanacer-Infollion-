@@ -7,21 +7,21 @@ Git-Clone this repository / Download this repo. as zip
    -> $ . \virtual\scripts\activate.bat (For Windows OS)
 
    
-3. Install all python-lib depandencies, given in the requirements.txt
+2. Install all python-lib depandencies, given in the requirements.txt
    -> $ python3 -m pip install -r requirements.txt
    
-4. Execute app.py: SHELL:> $ python3 app.py
+3. Execute app.py: SHELL:> $ python3 app.py
 
-5. Access the solution at(Web-browser link): http://localhost:5000/ or http://127.0.0.1:5000
+4. Access the solution at(Web-browser link): http://localhost:5000/ or http://127.0.0.1:5000
 
-6. Browser Interface is really simple:
+5. Browser Interface is really simple:
    -> Start and Stop button to start/stop simulation.
    -> Select Load-Balancer algorithm: Round_Robin, Threshold Mode and Least_Occupied
    -> The dashboard shows the loads in each node.
    -> The load is dependent on the length of queue on each server.
 
-7. The log-window on the left simply shows the IP address and its selected node where request was forwarded.
-8. On the root folder, this program do create another log-file, locally (named: Logfile.txt, in the folder, Logs).
+6. The log-window on the left simply shows the IP address and its selected node where request was forwarded.
+7. On the root folder, this program do create another log-file, locally (named: Logfile.txt, in the folder, Logs).
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
