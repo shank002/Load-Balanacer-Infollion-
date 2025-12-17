@@ -1,11 +1,15 @@
 HOW TO RUN THIS SOLUTION: (TASK3 - Write a solution for Load-Balancer)
 ..Git-Clone this repository / Download this repo. as zip
 
-1. Exceute the virtual-environment in the virtual folder:
-   SHELL:> $ . /virtual/bin/activate (FOR LINUX)
-   CMD/Powershell:> .\virtual\bin\activate.ps1 (FOR WINDOWS)
+1. Exceute the virtual-environment
+   -> $ python3 -m venv virtual
+   -> $ . /virtual/bin/activate (For UNIX Based OS)
+   -> $ . \virtual\scripts\activate.bat (For Windows OS)
+
    
 3. Install all python-lib depandencies, given in the requirements.txt
+   -> $ python3 -m pip install -r requirements.txt
+   
 4. Execute app.py: SHELL:> $ python3 app.py
 
 5. Access the solution at(Web-browser link): http://localhost:5000/ or http://127.0.0.1:5000
